@@ -1,30 +1,33 @@
-
 def str_len(str_in: str) -> str:
     """
     Given a string parameter, this function should return the length of the parameter.
     """
-    pass  # remove pass statement and implement me
+    return len(str_in)
+    # pass  # remove pass statement and implement me
 
 
 def first_char(str_in: str) -> str:
     """
     Given a string parameter, this function should return the first letter of the parameter.
     """
-    pass  # remove pass statement and implement me
+    return str_in[0]
+    # pass  # remove pass statement and implement me
 
 
 def last_char(str_in: str) -> str:
     """
     Given a string parameter, this function should return the last letter of the parameter..
     """
-    pass  # remove pass statement and implement me
+    return str_in[str_len(str_in)-1]
+     #pass  # remove pass statement and implement me
 
 
 def input_has_substring(str_in: str, sub_str_in: str) -> bool:
     """
     This function determines if the substring exists within the string. Returns True or False.
     """
-    pass  # remove pass statement and implement me
+    return str_in.find(sub_str_in) != -1
+     #pass  # remove pass statement and implement me
 
 
 def substring(str_in: str, start: int, stop: int) -> str:
