@@ -61,7 +61,6 @@ def half_list(list_in: List, half: int) -> List:
 
     answer = [list_in[0:math.ceil(len(list_in) / 2)], list_in[math.ceil(len(list_in) // 2):len(list_in)]]
     return answer[half - 1]
-    pass  # remove pass statement and implement me
 
 
 def remove_odds(list_in: List[int]) -> None:
@@ -70,7 +69,11 @@ def remove_odds(list_in: List[int]) -> None:
 
     :return: None
     """
-    pass  # remove pass statement and implement me
+    for n in list_in:
+        if n % 2 != 0:
+            list_in.remove(n)
+
+    return None
 
 
 def remove_evens(list_in: List[int]) -> None:
@@ -79,7 +82,12 @@ def remove_evens(list_in: List[int]) -> None:
 
     :return: None
     """
-    pass  # remove pass statement and implement me
+    #print(list(filter(lambda x: x % 2, list_in)))
+    for n in list_in:
+        if n % 2 == 0:
+            list_in.remove(n)
+
+    return None
 
 
 def concatenate_lists(list_a: List, list_b: List) -> List:
@@ -90,7 +98,8 @@ def concatenate_lists(list_a: List, list_b: List) -> List:
     :param list_b: Another list
     :return: A list containing all elements from list_a and list_b
     """
-    pass  # remove pass statement and implement me
+    answer = list_a + list_b
+    return answer
 
 
 def multiply_list(list_in: List, scalar: int) -> List:
