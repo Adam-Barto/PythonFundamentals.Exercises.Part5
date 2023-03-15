@@ -34,9 +34,8 @@ def sort_by_commit_count(list_in: List) -> List:
     :param list_in: A list where each entry is a list containing a name and the commit count corresponding to a user
     :return: The same list sorted in ascending order based on the commit count
     """
-    list_in.sort(key=lambda value: value[1])
+    list_in.sort(key=lambda value: value[1])  # key is red here in Pycharm, but it works fine.
     return list_in
-    pass  # remove pass statement and implement me
 
 
 def gen_list_of_nums(n: int) -> List[int]:
@@ -59,8 +58,9 @@ def half_list(list_in: List, half: int) -> List:
     If the length of list_in is an odd number, round the half value up (hint: math.ceil()).
     :return: A list.
     """
-    # if half == 0
-    # return list_in[half:]
+
+    answer = [list_in[0:math.ceil(len(list_in) / 2)], list_in[math.ceil(len(list_in) // 2):len(list_in)]]
+    return answer[half - 1]
     pass  # remove pass statement and implement me
 
 
