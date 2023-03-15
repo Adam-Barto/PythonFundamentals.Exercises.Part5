@@ -111,4 +111,8 @@ def multiply_list(list_in: List, scalar: int) -> List:
     :param scalar: An integer
     :return: A list
     """
-    pass  # remove pass statement and implement me
+    new_list = list_in.copy()
+    new_list *= scalar
+    return new_list
+
+
