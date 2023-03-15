@@ -1,3 +1,4 @@
+import math
 from typing import List
 from math import ceil
 
@@ -33,7 +34,8 @@ def sort_by_commit_count(list_in: List) -> List:
     :param list_in: A list where each entry is a list containing a name and the commit count corresponding to a user
     :return: The same list sorted in ascending order based on the commit count
     """
-    print(list_in.sort())
+    list_in.sort(key=lambda value: value[1])
+    return list_in
     pass  # remove pass statement and implement me
 
 
@@ -57,6 +59,8 @@ def half_list(list_in: List, half: int) -> List:
     If the length of list_in is an odd number, round the half value up (hint: math.ceil()).
     :return: A list.
     """
+    # if half == 0
+    # return list_in[half:]
     pass  # remove pass statement and implement me
 
 
