@@ -33,6 +33,7 @@ def sort_by_commit_count(list_in: List) -> List:
     :param list_in: A list where each entry is a list containing a name and the commit count corresponding to a user
     :return: The same list sorted in ascending order based on the commit count
     """
+    print(list_in.sort())
     pass  # remove pass statement and implement me
 
 
@@ -43,7 +44,8 @@ def gen_list_of_nums(n: int) -> List[int]:
     :param n: The number of items the result should contain
     :return: A list of integers
     """
-    pass  # remove pass statement and implement me
+    answer = list(range(n))
+    return answer
 
 
 def half_list(list_in: List, half: int) -> List:
