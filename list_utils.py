@@ -34,8 +34,9 @@ def sort_by_commit_count(list_in: List) -> List:
     :param list_in: A list where each entry is a list containing a name and the commit count corresponding to a user
     :return: The same list sorted in ascending order based on the commit count
     """
-    list_in.sort(key=lambda value: value[1])  # key is red here in Pycharm, but it works fine.
-    return list_in
+    new_list = list_in.copy()
+    new_list.sort(key=lambda value: value[1])  # key is red here in Pycharm, but it works fine.
+    return new_list
 
 
 def gen_list_of_nums(n: int) -> List[int]:
